@@ -1,7 +1,7 @@
 #Range[0,1]:1 is perfect
 import cv2
 i=0
-test=cv2.imread('ff.jpg')  #read the test image
+test=cv2.imread('ff.jpg',0)  #read the test image
 histt = cv2.calcHist([test], [0], None, [256], [0, 256])  #calculate the histogram of test image
 print('With similiar images:')
 for i in range(6):
